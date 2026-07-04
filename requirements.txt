@@ -1,1 +1,4 @@
-
+Arduino IDE 2.x
+Adafruit PWM Servo Driver Library
+Wire Library
+Servo Library
