@@ -91,3 +91,141 @@ The manipulator uses a combination of high-torque MG996R servos and SG90 micro s
 | Embedded C | Robot control logic |
 | Servo Library | Servo motor control |
 | PCA9685 Library | PWM signal generation |
+
+
+
+# 📂 Repository Structure
+
+```text
+RoboPick/
+
+├── docs/
+│   └── diagrams/
+│       ├── 01_System_Architecture.svg
+│       ├── 02_Hardware_Architecture.svg
+│       ├── 03_Software_Architecture.svg
+│       ├── 04_Pick_and_Place_Workflow.svg
+│       ├── 05_Wiring_Diagram.svg
+│       └── 06_Project_Workflow.svg
+│
+├── hardware/
+│   ├── README.md
+│   ├── Bill_of_Materials.md
+│   ├── Hardware_Specifications.md
+│   └── Power_Management.md
+│
+├── software/
+│   ├── README.md
+│   ├── Motion_Control.md
+│   ├── Servo_Control.md
+│   ├── System_Architecture.md
+│   └── src/
+│       ├── main.ino
+│       ├── config.h
+│       ├── servo_controller.h
+│       ├── servo_controller.cpp
+│       ├── pick_place_sequence.h
+│       └── pick_place_sequence.cpp
+│
+├── images/
+├── videos/
+├── results/
+│
+├── README.md
+├── PROJECT_STATUS.md
+├── LICENSE
+├── requirements.txt
+└── .gitignore
+```
+
+
+# ⚙️ Working Principle
+
+The robotic manipulator performs an automated pick-and-place operation by executing a predefined sequence of servo motor movements.
+
+### Operation Sequence
+
+1. 🏠 Initialize the robotic arm to the home position.
+2. 📍 Move the arm to the predefined pick location.
+3. 🤏 Close the gripper to securely grasp the object.
+4. ⬆️ Lift the object from the pickup position.
+5. ↪️ Rotate and move towards the predefined placement location.
+6. 📦 Release the object by opening the gripper.
+7. 🔄 Return the robotic arm to its home position, ready for the next cycle.
+
+The Arduino Uno generates control commands for each servo motor through the PCA9685 PWM driver, ensuring synchronized and smooth joint movements throughout the operation.
+
+
+
+# 🏗️ System Architecture
+
+<p align="center">
+  <img src="docs/diagrams/01_System_Architecture.svg" width="900">
+</p>
+
+The system architecture illustrates the interaction between the Arduino Uno, PWM driver, servo motors, power supply, and robotic manipulator components during automated pick-and-place operations.
+
+
+
+# 🔩 Hardware Architecture
+
+<p align="center">
+  <img src="docs/diagrams/02_Hardware_Architecture.svg" width="900">
+</p>
+
+The hardware architecture highlights the physical organization of the robotic manipulator, including the controller, servo motors, power distribution, and end-effector.
+
+
+
+# 💻 Software Architecture
+
+<p align="center">
+  <img src="docs/diagrams/03_Software_Architecture.svg" width="900">
+</p>
+
+The software architecture follows a modular design, separating configuration, servo control, motion sequencing, and the main control logic for improved maintainability and scalability.
+
+
+
+
+# 🤖 Pick-and-Place Workflow
+
+<p align="center">
+  <img src="docs/diagrams/04_Pick_and_Place_Workflow.svg" width="900">
+</p>
+
+This workflow demonstrates the complete sequence executed by the robotic arm during a pick-and-place operation, from initialization to object placement and system reset.
+
+
+
+# 🔌 Wiring Diagram
+
+<p align="center">
+  <img src="docs/diagrams/05_Wiring_Diagram.svg" width="900">
+</p>
+
+The wiring diagram illustrates the electrical connections between the Arduino Uno, PCA9685 PWM driver, servo motors, and power supply.
+
+
+
+# 🔄 Complete Project Workflow
+
+<p align="center">
+  <img src="docs/diagrams/06_Project_Workflow.svg" width="900">
+</p>
+
+The project workflow summarizes the complete operational pipeline, from system startup and motion execution to successful object manipulation.
+
+
+# 📊 Robot Specifications
+
+| Parameter | Value |
+|-----------|-------|
+| Degrees of Freedom | 3 |
+| Controller | Arduino Uno |
+| Servo Motors | MG996R & SG90 |
+| PWM Driver | PCA9685 (16-Channel) |
+| Programming Language | Embedded C |
+| Motion Type | Predefined Sequence |
+| End Effector | Servo-actuated Mechanical Gripper |
+| Application | Pick-and-Place Automation |
