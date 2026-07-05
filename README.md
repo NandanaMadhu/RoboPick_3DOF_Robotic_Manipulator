@@ -160,61 +160,59 @@ The Arduino Uno generates control commands for each servo motor through the PCA9
 # 🏗️ System Architecture
 
 <p align="center">
-  <img src="docs/diagrams/01_System_Architecture.svg" width="900">
+  <img src="docs/diagrams/01_System_Architecture.svg" alt="System Architecture" width="1000">
 </p>
 
-The system architecture illustrates the interaction between the Arduino Uno, PWM driver, servo motors, power supply, and robotic manipulator components during automated pick-and-place operations.
-
+The system architecture illustrates how the Arduino Uno coordinates with the PCA9685 PWM driver to control multiple servo motors, enabling the robotic manipulator to perform automated pick-and-place operations through predefined motion sequences.
 
 
 # 🔩 Hardware Architecture
 
 <p align="center">
-  <img src="docs/diagrams/02_Hardware_Architecture.svg" width="900">
+  <img src="docs/diagrams/02_Hardware_Architecture.svg" alt="Hardware Architecture" width="1000">
 </p>
 
-The hardware architecture highlights the physical organization of the robotic manipulator, including the controller, servo motors, power distribution, and end-effector.
-
+The hardware architecture presents the physical components of the robotic manipulator, including the Arduino Uno, PCA9685 PWM driver, servo motors, external power supply, and the mechanical gripper.
 
 
 # 💻 Software Architecture
 
+# 💻 Software Architecture
+
 <p align="center">
-  <img src="docs/diagrams/03_Software_Architecture.svg" width="900">
+  <img src="docs/diagrams/03_Software_Architecture.svg" alt="Software Architecture" width="1000">
 </p>
 
-The software architecture follows a modular design, separating configuration, servo control, motion sequencing, and the main control logic for improved maintainability and scalability.
-
+The software architecture follows a modular embedded design where initialization, servo control, motion planning, and the pick-and-place sequence are organized into separate logical components for improved readability and maintainability.
 
 
 
 # 🤖 Pick-and-Place Workflow
 
 <p align="center">
-  <img src="docs/diagrams/04_Pick_and_Place_Workflow.svg" width="900">
+  <img src="docs/diagrams/04_Pick_and_Place_Workflow.svg" alt="Pick and Place Workflow" width="1000">
 </p>
 
-This workflow demonstrates the complete sequence executed by the robotic arm during a pick-and-place operation, from initialization to object placement and system reset.
+The robotic arm executes a predefined sequence consisting of initialization, object pickup, transportation, placement, and return to the home position, ensuring repeatable automated operation.
 
 
 
 # 🔌 Wiring Diagram
 
 <p align="center">
-  <img src="docs/diagrams/05_Wiring_Diagram.svg" width="900">
+  <img src="docs/diagrams/05_Wiring_Diagram.svg" alt="Wiring Diagram" width="1000">
 </p>
 
-The wiring diagram illustrates the electrical connections between the Arduino Uno, PCA9685 PWM driver, servo motors, and power supply.
-
+The wiring diagram illustrates the electrical connections between the Arduino Uno, PCA9685 PWM driver, servo motors, and external power supply required for reliable robotic arm operation.
 
 
 # 🔄 Complete Project Workflow
 
 <p align="center">
-  <img src="docs/diagrams/06_Project_Workflow.svg" width="900">
+  <img src="docs/diagrams/06_Project_Workflow.svg" alt="Project Workflow" width="1000">
 </p>
 
-The project workflow summarizes the complete operational pipeline, from system startup and motion execution to successful object manipulation.
+This workflow summarizes the complete lifecycle of the robotic manipulator, beginning with system initialization and ending with the successful completion of the pick-and-place task.
 
 
 # 📊 Robot Specifications
