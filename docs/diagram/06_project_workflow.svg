@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" font-family="Inter, 'Segoe UI', Arial, sans-serif">
+
+<defs>
+  <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="rgba(0,0,0,0.14)"/>
+  </filter>
+</defs>
+
+<rect x="0" y="0" width="1600" height="1000" fill="#FFFFFF"/>
+<text x="800.0" y="42.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="700" fill="#1A2B4C">Project Workflow Diagram</text>
+<text x="800.0" y="66.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="400" fill="#616161">3-DOF Robotic Arm — Full Operation Cycle</text>
+<rect x="158.0" y="185.0" width="220.0" height="60.0" rx="30.0" fill="#DCEDC8" stroke="#33691E" stroke-width="1.8" filter="url(#softShadow)"/>
+<text x="268.0" y="220.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#33691E">Start</text>
+<rect x="424.0" y="170.0" width="220" height="90" rx="10" fill="#D6E9FA" stroke="#1565C0" stroke-width="1.6" filter="url(#softShadow)"/>
+<text x="534.0" y="208.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#37474F">System Initialization</text>
+<text x="534.0" y="227.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="400" fill="#616161">(Setup Servos, PCA9685, I2C)</text>
+<line x1="378.0" y1="215.0" x2="424.0" y2="215.0" stroke="#616161" stroke-width="1.8"/>
+<polyline points="416.7,218.4 424.0,215.0 416.7,211.6" fill="none" stroke="#616161" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="690.0" y="170.0" width="220" height="90" rx="10" fill="#D6E9FA" stroke="#1565C0" stroke-width="1.6" filter="url(#softShadow)"/>
+<text x="800.0" y="208.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#37474F">Move to</text>
+<text x="800.0" y="225.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#37474F">Pick Position</text>
+<line x1="644.0" y1="215.0" x2="690.0" y2="215.0" stroke="#616161" stroke-width="1.8"/>
+<polyline points="682.7,218.4 690.0,215.0 682.7,211.6" fill="none" stroke="#616161" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="956.0" y="170.0" width="220" height="90" rx="10" fill="#D6E9FA" stroke="#1565C0" stroke-width="1.6" filter="url(#softShadow)"/>
+<text x="1066.0" y="208.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#37474F">Gripper Close</text>
+<text x="1066.0" y="225.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#37474F">(Pick Object)</text>
+<line x1="910.0" y1="215.0" x2="956.0" y2="215.0" stroke="#616161" stroke-width="1.8"/>
+<polyline points="948.7,218.4 956.0,215.0 948.7,211.6" fill="none" stroke="#616161" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1222.0" y="170.0" width="220" height="90" rx="10" fill="#D6E9FA" stroke="#1565C0" stroke-width="1.6" filter="url(#softShadow)"/>
+<text x="1332.0" y="215.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#37474F">Lift Object</text>
+<line x1="1176.0" y1="215.0" x2="1222.0" y2="215.0" stroke="#616161" stroke-width="1.8"/>
+<polyline points="1214.7,218.4 1222.0,215.0 1214.7,211.6" fill="none" stroke="#616161" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1222.0" y="390.0" width="220" height="90" rx="10" fill="#D6E9FA" stroke="#1565C0" stroke-width="1.6" filter="url(#softShadow)"/>
+<text x="1332.0" y="428.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#37474F">Move to</text>
+<text x="1332.0" y="445.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#37474F">Place Position</text>
+<rect x="956.0" y="390.0" width="220" height="90" rx="10" fill="#D6E9FA" stroke="#1565C0" stroke-width="1.6" filter="url(#softShadow)"/>
+<text x="1066.0" y="428.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#37474F">Gripper Open</text>
+<text x="1066.0" y="445.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#37474F">(Release Object)</text>
+<rect x="690.0" y="390.0" width="220" height="90" rx="10" fill="#D6E9FA" stroke="#1565C0" stroke-width="1.6" filter="url(#softShadow)"/>
+<text x="800.0" y="428.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#37474F">Return to</text>
+<text x="800.0" y="445.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="#37474F">Home Position</text>
+<line x1="1332.0" y1="260.0" x2="1332.0" y2="390.0" stroke="#616161" stroke-width="1.8"/>
+<polyline points="1328.6,382.7 1332.0,390.0 1335.4,382.7" fill="none" stroke="#616161" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1222.0" y1="435.0" x2="1176.0" y2="435.0" stroke="#616161" stroke-width="1.8"/>
+<polyline points="1183.3,431.6 1176.0,435.0 1183.3,438.4" fill="none" stroke="#616161" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="956.0" y1="435.0" x2="910.0" y2="435.0" stroke="#616161" stroke-width="1.8"/>
+<polyline points="917.3,431.6 910.0,435.0 917.3,438.4" fill="none" stroke="#616161" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="800.0" y1="480.0" x2="800.0" y2="560.0" stroke="#616161" stroke-width="1.8"/>
+<polyline points="796.6,552.7 800.0,560.0 803.4,552.7" fill="none" stroke="#616161" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="800.0,560.0 910.0,620 800.0,680.0 690.0,620" fill="#FFF3CD" stroke="#8A6D00" stroke-width="1.8" filter="url(#softShadow)"/>
+<text x="800.0" y="617.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#7A5B00">Repeat</text>
+<text x="800.0" y="635.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#7A5B00">Operation?</text>
+<polyline points="690.0,620.0 620.0,620.0 620.0,215.0 690.0,215.0" fill="none" stroke="#33691E" stroke-width="2"/>
+<polyline points="682.7,218.4 690.0,215.0 682.7,211.6" fill="none" stroke="#33691E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="602.0" y="591.0" width="36" height="20" rx="4" fill="#FFFFFF"/>
+<text x="620.0" y="606.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="700" fill="#33691E">Yes</text>
+<line x1="800.0" y1="680.0" x2="800.0" y2="740.0" stroke="#B71C1C" stroke-width="2"/>
+<polyline points="796.6,732.7 800.0,740.0 803.4,732.7" fill="none" stroke="#B71C1C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="782.0" y="699.0" width="36" height="20" rx="4" fill="#FFFFFF"/>
+<text x="800.0" y="714.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="700" fill="#B71C1C">No</text>
+<rect x="720.0" y="740.0" width="160.0" height="56.0" rx="28.0" fill="#FFCDD2" stroke="#B71C1C" stroke-width="1.8" filter="url(#softShadow)"/>
+<text x="800.0" y="773.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#B71C1C">End</text>
+<rect x="60" y="831.0" width="1480" height="97" rx="10" fill="#F1F8E9" stroke="#33691E" stroke-width="1.2"/>
+<text x="80" y="855.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#33691E">Prompt for generation:</text>
+<text x="80" y="875.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" fill="#37474F">Create a project workflow flowchart for a 3-DOF robotic arm. Start -&gt; System Initialization (Setup Servos, PCA9685, I2C) -&gt; Move to Pick Position -&gt;</text>
+<text x="80" y="892.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" fill="#37474F">Gripper Close (Pick Object) -&gt; Lift Object -&gt; Move to Place Position -&gt; Gripper Open (Release Object) -&gt; Return to Home Position -&gt; Decision diamond</text>
+<text x="80" y="909.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" fill="#37474F">“Repeat Operation?” If Yes, loop back to Move to Pick Position. If No, go to End. Use clean flowchart symbols with arrows.</text>
+</svg>

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" font-family="Inter, 'Segoe UI', Arial, sans-serif">
+
+<defs>
+  <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="rgba(0,0,0,0.14)"/>
+  </filter>
+</defs>
+
+<rect x="0" y="0" width="1600" height="1000" fill="#FFFFFF"/>
+<text x="800.0" y="42.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="700" fill="#1A2B4C">Software Architecture Diagram</text>
+<text x="800.0" y="66.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="400" fill="#616161">3-DOF Robotic Arm — Firmware Module Structure</text>
+<rect x="640.0" y="90.0" width="320.0" height="60.0" rx="10" fill="#FFE0B2" stroke="#E65100" stroke-width="1.5" filter="url(#softShadow)"/>
+<circle cx="671.0" cy="120.0" r="15.0" fill="#FFFFFF"/>
+<circle cx="671.0" cy="115.8" r="4.8" fill="#E65100"/>
+<path d="M 663.2 128.4 Q 671.0 119.4 678.8 128.4 Z" fill="#E65100"/>
+<text x="698.0" y="125.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#E65100">User (Predefined Operation)</text>
+<line x1="800.0" y1="150.0" x2="710.0" y2="200.0" stroke="#616161" stroke-width="1.8"/>
+<polyline points="714.7,193.5 710.0,200.0 718.0,199.4" fill="none" stroke="#616161" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="500.0" y="200.0" width="420.0" height="130.0" rx="10" fill="#D6E9FA" stroke="#1565C0" stroke-width="1.5" filter="url(#softShadow)"/>
+<text x="710.0" y="226.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#1565C0">Main Program (main.ino)</text>
+<line x1="516.0" y1="236.0" x2="904.0" y2="236.0" stroke="#1565C0" stroke-width="1" opacity="0.5"/>
+<circle cx="522.0" cy="252.0" r="2.6" fill="#0D3C6E"/>
+<text x="532.0" y="256.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#0D3C6E">System Initialization</text>
+<circle cx="522.0" cy="272.0" r="2.6" fill="#0D3C6E"/>
+<text x="532.0" y="276.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#0D3C6E">Sequence Execution</text>
+<circle cx="522.0" cy="292.0" r="2.6" fill="#0D3C6E"/>
+<text x="532.0" y="296.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#0D3C6E">Task Coordination</text>
+<line x1="920.0" y1="265.0" x2="1010.0" y2="265.0" stroke="#616161" stroke-width="1.8"/>
+<polyline points="1002.7,268.4 1010.0,265.0 1002.7,261.6" fill="none" stroke="#616161" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="927.3,261.6 920.0,265.0 927.3,268.4" fill="none" stroke="#616161" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1010.0" y="200.0" width="300.0" height="130.0" rx="10" fill="#ECEFF1" stroke="#90A4AE" stroke-width="1.5" filter="url(#softShadow)"/>
+<text x="1160.0" y="226.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#37474F">Configuration (config.h)</text>
+<line x1="1026.0" y1="236.0" x2="1294.0" y2="236.0" stroke="#90A4AE" stroke-width="1" opacity="0.5"/>
+<circle cx="1032.0" cy="252.0" r="2.6" fill="#455A64"/>
+<text x="1042.0" y="256.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#455A64">Servo Angles</text>
+<circle cx="1032.0" cy="272.0" r="2.6" fill="#455A64"/>
+<text x="1042.0" y="276.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#455A64">Positions</text>
+<circle cx="1032.0" cy="292.0" r="2.6" fill="#455A64"/>
+<text x="1042.0" y="296.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#455A64">Timing Parameters</text>
+<rect x="190.0" y="390.0" width="380" height="190" rx="10" fill="#DCEDC8" stroke="#33691E" stroke-width="1.5" filter="url(#softShadow)"/>
+<text x="380.0" y="416.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#1B4B10">Motion Control Module</text>
+<text x="380.0" y="434.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#1B4B10">(pick_place_sequence.cpp)</text>
+<line x1="206.0" y1="444.0" x2="554.0" y2="444.0" stroke="#33691E" stroke-width="1" opacity="0.5"/>
+<circle cx="214.0" cy="462.0" r="2.6" fill="#1B4B10"/>
+<text x="224.0" y="466.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#1B4B10">Pick Sequence</text>
+<circle cx="214.0" cy="483.0" r="2.6" fill="#1B4B10"/>
+<text x="224.0" y="487.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#1B4B10">Place Sequence</text>
+<circle cx="214.0" cy="504.0" r="2.6" fill="#1B4B10"/>
+<text x="224.0" y="508.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#1B4B10">Home Position</text>
+<circle cx="214.0" cy="525.0" r="2.6" fill="#1B4B10"/>
+<text x="224.0" y="529.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#1B4B10">Movement Control</text>
+<rect x="610.0" y="390.0" width="380" height="190" rx="10" fill="#D6E9FA" stroke="#1565C0" stroke-width="1.5" filter="url(#softShadow)"/>
+<text x="800.0" y="416.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#0D3C6E">Servo Control Module</text>
+<text x="800.0" y="434.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#0D3C6E">(servo_controller.cpp)</text>
+<line x1="626.0" y1="444.0" x2="974.0" y2="444.0" stroke="#1565C0" stroke-width="1" opacity="0.5"/>
+<circle cx="634.0" cy="462.0" r="2.6" fill="#0D3C6E"/>
+<text x="644.0" y="466.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#0D3C6E">Servo Initialization</text>
+<circle cx="634.0" cy="483.0" r="2.6" fill="#0D3C6E"/>
+<text x="644.0" y="487.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#0D3C6E">Angle Control</text>
+<circle cx="634.0" cy="504.0" r="2.6" fill="#0D3C6E"/>
+<text x="644.0" y="508.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#0D3C6E">PWM Generation</text>
+<circle cx="634.0" cy="525.0" r="2.6" fill="#0D3C6E"/>
+<text x="644.0" y="529.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#0D3C6E">Smooth Movement</text>
+<rect x="1030.0" y="390.0" width="380" height="190" rx="10" fill="#EDE7F6" stroke="#5E35B1" stroke-width="1.5" filter="url(#softShadow)"/>
+<text x="1220.0" y="416.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#4A2E82">PWM Driver Module</text>
+<text x="1220.0" y="434.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#4A2E82">(PCA9685 Library)</text>
+<line x1="1046.0" y1="444.0" x2="1394.0" y2="444.0" stroke="#5E35B1" stroke-width="1" opacity="0.5"/>
+<circle cx="1054.0" cy="462.0" r="2.6" fill="#4A2E82"/>
+<text x="1064.0" y="466.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#4A2E82">I2C Communication</text>
+<circle cx="1054.0" cy="483.0" r="2.6" fill="#4A2E82"/>
+<text x="1064.0" y="487.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#4A2E82">PWM Signal Generation</text>
+<circle cx="1054.0" cy="504.0" r="2.6" fill="#4A2E82"/>
+<text x="1064.0" y="508.0" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="400" fill="#4A2E82">Frequency Control</text>
+<polyline points="710.0,330.0 710.0,360.0 380.0,360.0 380.0,390.0" fill="none" stroke="#616161" stroke-width="1.6"/>
+<polyline points="376.6,382.7 380.0,390.0 383.4,382.7" fill="none" stroke="#616161" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="710.0,330.0 710.0,360.0 800.0,360.0 800.0,390.0" fill="none" stroke="#616161" stroke-width="1.6"/>
+<polyline points="796.6,382.7 800.0,390.0 803.4,382.7" fill="none" stroke="#616161" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="710.0,330.0 710.0,360.0 1220.0,360.0 1220.0,390.0" fill="none" stroke="#616161" stroke-width="1.6"/>
+<polyline points="1216.6,382.7 1220.0,390.0 1223.4,382.7" fill="none" stroke="#616161" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="570.0" y1="485.0" x2="610.0" y2="485.0" stroke="#616161" stroke-width="1.6"/>
+<polyline points="602.7,488.4 610.0,485.0 602.7,481.6" fill="none" stroke="#616161" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="577.3,481.6 570.0,485.0 577.3,488.4" fill="none" stroke="#616161" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="990.0" y1="485.0" x2="1030.0" y2="485.0" stroke="#616161" stroke-width="1.6"/>
+<polyline points="1022.7,488.4 1030.0,485.0 1022.7,481.6" fill="none" stroke="#616161" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="997.3,481.6 990.0,485.0 997.3,488.4" fill="none" stroke="#616161" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="190.0" y="635.0" width="1220.0" height="60.0" rx="10" fill="#F1F8E9" stroke="#33691E" stroke-width="1.5" filter="url(#softShadow)"/>
+<text x="800.0" y="659.0" text-anchor="middle" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700" fill="#33691E">Hardware Abstraction: Arduino Uno + PCA9685 + Servo Motors</text>
+<polyline points="380.0,580.0 380.0,607.0 800.0,607.0 800.0,635.0" fill="none" stroke="#616161" stroke-width="1.6"/>
+<polyline points="796.6,627.7 800.0,635.0 803.4,627.7" fill="none" stroke="#616161" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="800.0,580.0 800.0,607.0 800.0,607.0 800.0,635.0" fill="none" stroke="#616161" stroke-width="1.6"/>
+<polyline points="796.6,627.7 800.0,635.0 803.4,627.7" fill="none" stroke="#616161" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1220.0,580.0 1220.0,607.0 800.0,607.0 800.0,635.0" fill="none" stroke="#616161" stroke-width="1.6"/>
+<polyline points="796.6,627.7 800.0,635.0 803.4,627.7" fill="none" stroke="#616161" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="60" y="730" width="1480" height="156" rx="10" fill="#F1F8E9" stroke="#33691E" stroke-width="1.2"/>
+<text x="80" y="754" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#33691E">Prompt for generation:</text>
+<text x="80" y="774" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" fill="#37474F">Create a software architecture diagram for a robotic arm project. Top layer: User (Predefined Operation). Below that Main Program (main.ino) with</text>
+<text x="80" y="791" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" fill="#37474F">tasks: System Initialization, Sequence Execution, Task Coordination. To the right show Configuration (config.h) with Servo Angles, Positions, Timing</text>
+<text x="80" y="808" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" fill="#37474F">Parameters. Below main program show three module boxes: Motion Control Module (pick_place_sequence.cpp) with Pick Sequence, Place Sequence, Home</text>
+<text x="80" y="825" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" fill="#37474F">Position, Movement Control; Servo Control Module (servo_controller.cpp) with Servo Initialization, Angle Control, PWM Generation, Smooth Movement;</text>
+<text x="80" y="842" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" fill="#37474F">PWM Driver Module (PCA9685 Library) with I2C Communication, PWM Signal Generation, Frequency Control. Bottom layer: Hardware Abstraction: Arduino</text>
+<text x="80" y="859" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="400" fill="#37474F">Uno + PCA9685 + Servo Motors. Use clean layered boxes and arrows.</text>
+</svg>
