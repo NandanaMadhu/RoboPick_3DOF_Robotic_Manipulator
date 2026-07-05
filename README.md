@@ -1,8 +1,19 @@
 <p align="center">
-  <img src="images/robopick_banner.png" alt="RoboPick Banner" width="100%">
+  <img src="images/banner.png" alt="RoboPick Banner" width="100%">
 </p>
 
-# 🤖 RoboPick: 3-DOF Robotic Manipulator for Automated Pick-and-Place Operations
+
+<h1 align="center">
+🤖 RoboPick
+</h1>
+
+<h3 align="center">
+3-DOF Robotic Manipulator for Automated Pick-and-Place Operations
+</h3>
+
+<p align="center">
+A 3-DOF robotic manipulator developed using <b>Arduino Uno</b>, <b>MG996R & SG90 Servo Motors</b>, and a <b>PCA9685 PWM Driver</b> to perform automated pick-and-place operations through predefined motion sequences.
+</p>
 
 A 3-DOF robotic manipulator developed using **Arduino Uno**, **MG996R/SG90 servo motors**, and a **PCA9685 PWM driver** to perform automated pick-and-place operations through predefined motion sequences. The project demonstrates robotic manipulation, servo coordination, and embedded systems programming, providing a low-cost educational platform for industrial automation concepts.
 
